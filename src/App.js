@@ -15,6 +15,16 @@ const App = () => {
         color={bootstrapButtonVariant.outlineWarning}
         text={buttonTexts.outlineWarning}
       />
+      <br></br>
+      <br></br>
+      <CustomButton
+        color={bootstrapButtonVariant.danger}
+      />
+      <br></br>
+      <br></br>
+      <CustomButton
+        color={bootstrapButtonVariant.success}
+      />
     </div>
   );
 };
