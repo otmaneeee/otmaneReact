@@ -4,12 +4,15 @@ export const bootstrapButtonVariant = {
   danger: "danger",
   success: "success",
   outlineWarning: "outline-warning",
+  primary : "primary"
 };
 
 export const buttonTexts = {
   danger: "danger",
   success: "success",
   outlineWarning: "outline-warning",
+  connection : "Se connecter",
+  mdpForgotten : "Mot de passe oublié"
 };
 
 export const textInputProps = {

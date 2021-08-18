@@ -4,19 +4,11 @@ import CustomButton from "./components/CustomButton";
 import { bootstrapButtonVariant, buttonTexts } from "./constants";
 import CustomInput from "./components/CustomInput";
 import { textInputProps } from "./constants";
+import Category from "./containers/category/category";
 const App = () => {
   return (
     <div>
-      <CustomInput
-        type={textInputProps.type.email}
-        placeholder={textInputProps.placeholder.email}
-        label={textInputProps.label.email}
-      />
-      <CustomInput 
-         type={textInputProps.type.password}
-         placeholder={textInputProps.placeholder.password}
-         label={textInputProps.label.password}
-      />
+      <Category />
       {/* <CustomButton
         color={bootstrapButtonVariant.success}
         text={buttonTexts.success}
