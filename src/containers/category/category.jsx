@@ -5,6 +5,9 @@ import { textInputProps , bootstrapButtonVariant ,buttonTexts } from '../../cons
 const Category = () => {
     return(
         <div>
+            <h1>Login</h1>
+            <br></br>
+            <br></br>
             <CustomInput
         type={textInputProps.type.email}
         placeholder={textInputProps.placeholder.email}
