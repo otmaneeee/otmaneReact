@@ -5,10 +5,29 @@ import { bootstrapButtonVariant, buttonTexts } from "./constants";
 import CustomInput from "./components/CustomInput";
 import { textInputProps } from "./constants";
 import Category from "./containers/category/category";
+import Inscription from "./containers/Inscription/inscription";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 const App = () => {
   return (
     <div>
-      <Category />
+    <Router>
+      <Switch>
+          <Route path="/login">
+            <Category />
+          </Route>
+          <Route path="/inscription">
+            <Inscription />
+          </Route>
+          <Route path="/">
+            <Category />
+          </Route>
+        </Switch>
+      </Router>
       {/* <CustomButton
         color={bootstrapButtonVariant.success}
         text={buttonTexts.success}
@@ -29,7 +48,7 @@ const App = () => {
       <CustomButton
         color={bootstrapButtonVariant.success}
       /> */}
-    </div>
+      </div>
   );
 };
 export default App;

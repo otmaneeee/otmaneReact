@@ -12,19 +12,26 @@ export const buttonTexts = {
   success: "success",
   outlineWarning: "outline-warning",
   connection : "Se connecter",
-  mdpForgotten : "Mot de passe oublié"
+  mdpForgotten : "Mot de passe oublié",
+  inscription : "S'inscrire"
 };
 
 export const textInputProps = {
-  type: { defaut: "text", password: "password", email: "email" },
+  type: { defaut: "text", password: "password", email: "email", },
   placeholder: {
     defaut: "enter your text",
     password: "enter your password",
     email: "enter your email",
+    firstName : "entrez votre prenom",
+    lastName : "entrez votre nom",
+    confirmPassword :"confirmez votre mot de passe",
   },
   label: {
     defaut: "enter your info",
     password: "Enter Password",
     email: "Enter Email",
+    firstName : "Prenom",
+    lastName : "Nom",
+    confirmPassword : "Confirmation du mot de passe",
   }
 };
