@@ -8,6 +8,7 @@ export const bootstrapButtonVariant = {
 };
 
 export const buttonTexts = {
+  add : "Add to the list",
   danger: "danger",
   success: "success",
   outlineWarning: "outline-warning",
@@ -35,3 +36,9 @@ export const textInputProps = {
     confirmPassword : "Confirmation du mot de passe",
   }
 };
+
+export const toDoList = {
+  label : "Enter your next step",
+  placeholder : "Enter your next step",
+  type : "text"
+}

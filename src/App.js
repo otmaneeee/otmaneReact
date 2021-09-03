@@ -12,10 +12,12 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import ToDo from "./containers/ToDoList"
 const App = () => {
   return (
     <div>
-    <Router>
+      <ToDo/>
+    {/* <Router>
       <Switch>
           <Route path="/login">
             <Category />
@@ -27,7 +29,7 @@ const App = () => {
             <Category />
           </Route>
         </Switch>
-      </Router>
+      </Router> */}
       {/* <CustomButton
         color={bootstrapButtonVariant.success}
         text={buttonTexts.success}
