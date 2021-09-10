@@ -12,11 +12,13 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import ToDo from "./containers/ToDoList"
+import ToDo from "./containers/ToDoList";
+import CustomNavBar from "./components/CustomNavBar";
 const App = () => {
   return (
     <div>
-      <ToDo/>
+      <CustomNavBar/>
+      {/* <ToDo/> */}
     {/* <Router>
       <Switch>
           <Route path="/login">
