@@ -14,10 +14,11 @@ import {
 } from "react-router-dom";
 import ToDo from "./containers/ToDoList";
 import CustomNavBar from "./components/CustomNavBar";
+import { navLinks } from "./constants";
 const App = () => {
   return (
     <div>
-      <CustomNavBar/>
+      <CustomNavBar links={navLinks}/>
       {/* <ToDo/> */}
     {/* <Router>
       <Switch>

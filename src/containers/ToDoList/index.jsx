@@ -1,7 +1,7 @@
 import CustomInput from "../../components/CustomInput";
 import React,{useState} from "react";
 import CustomButton from "../../components/CustomButton";
-import { toDoList, buttonTexts, bootstrapButtonVariant } from "../../constants";
+import {  toDoList ,buttonTexts, bootstrapButtonVariant } from "../../constants";
 import "./index.css";
 const ToDo = () => {
     const [step,setStep] = useState([]);
