@@ -127,7 +127,7 @@ export const dropdownProps = {
   },
 };
     
-
+export const PARAGRAPH_TO_TYPE = "enter your color";
 export const toDoList = {
   label: "Enter your next step",
   placeholder: "Enter your next step",
