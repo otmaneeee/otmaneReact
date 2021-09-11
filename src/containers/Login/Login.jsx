@@ -59,6 +59,7 @@ const Login = () => {
       </section>
       <br></br>
       <br></br>
+      <h1>Informations</h1>
       <h3>Email : {email}</h3>
       <h3>Password : {password}</h3>
     </div>
