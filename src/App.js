@@ -26,7 +26,7 @@ const App = () => {
         alignItems: "center",
       }}
     >
-      <Inscription />
+      <Login />
       {/* <Categorie/> */}
       {/* <DropDowns/> */}
       {/* <BigThree/> */}
