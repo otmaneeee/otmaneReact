@@ -2,20 +2,14 @@ import CustomButton from "../../components/CustomButton";
 import React, { useState } from "react";
 import CustomInput from "../../components/CustomInput";
 import { PARAGRAPH_TO_TYPE } from "../../constants";
-import { stringCompare } from "../../utils/stringUtils";
+import { stringCompare , stringsCharDiff } from "../../utils/stringUtils";
 const Categorie = () => {
   const [counter, setCounter] = useState(0);
   const [lastIndex, setLastIndex] = useState(0);
   const [name, setName] = useState("");
   const handleChange = (e) => {
     setName(e.target.value);
-    const inputVal = e.target.value;
-    const inputChar = inputVal.charAt(inputVal.length - 1);
-    if (
-      !stringCompare(inputChar, PARAGRAPH_TO_TYPE.charAt(inputVal.length - 1))
-    ) {
-      setCounter(counter + 1);
-    }
+    setCounter(stringsCharDiff(e.target.value,PARAGRAPH_TO_TYPE));
   };
   return (
     <div>
