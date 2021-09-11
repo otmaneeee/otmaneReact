@@ -6,21 +6,17 @@ import CustomInput from "./components/CustomInput";
 import { textInputProps } from "./constants";
 import Category from "./containers/category/category";
 import Inscription from "./containers/Inscription/inscription";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ToDo from "./containers/ToDoList";
 import CustomNavBar from "./components/CustomNavBar";
-import { navLinks } from "./constants";
+import { navLinks, logoProps } from "./constants";
+import Logo from "./components/CustomNavBar/Logo";
 const App = () => {
   return (
     <div>
-      <CustomNavBar links={navLinks}/>
+      <CustomNavBar links={navLinks} />
       {/* <ToDo/> */}
-    {/* <Router>
+      {/* <Router>
       <Switch>
           <Route path="/login">
             <Category />
@@ -53,7 +49,7 @@ const App = () => {
       <CustomButton
         color={bootstrapButtonVariant.success}
       /> */}
-      </div>
+    </div>
   );
 };
 export default App;

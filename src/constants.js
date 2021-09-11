@@ -47,6 +47,7 @@ export const customNavBarProps = {
       { link: "#home", text: "Home" },
       { link: "#features", text: "Features" },
     ],
+    logo: "My website",
   },
 };
 
@@ -55,6 +56,19 @@ export const navLinks = [
   { link: "#features", text: "Features" },
   { link: "#pricing", text: "Pricing" },
 ];
+
+export const logoProps = {
+  default : {
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5cMllkWiQQgd_NNM-7Nj2vUVn513EHEwbRQEVkTusuqlPXmAnJBCTWEM6Wgktn1k-9T4&usqp=CAU",
+  width: "70px",
+  height: "70px",
+  },
+  avengers : {
+    url: "https://www.pngitem.com/pimgs/m/33-334144_logo-avengers-hd-png-download.png",
+  width: "70px",
+  height: "70px",
+  }
+};
 
 export const toDoList = {
   label: "Enter your next step",
