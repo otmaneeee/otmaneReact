@@ -26,7 +26,7 @@ const Login = () => {
 
   return (
     <div>
-      <h1>Login</h1>
+      <h1 id="title">Login</h1>
       <br></br>
       <br></br>
       <CustomInput
