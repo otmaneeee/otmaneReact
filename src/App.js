@@ -4,7 +4,6 @@ import CustomButton from "./components/CustomButton";
 import { bootstrapButtonVariant, buttonTexts } from "./constants";
 import CustomInput from "./components/CustomInput";
 import { textInputProps } from "./constants";
-import Category from "./containers/category/category";
 import Inscription from "./containers/Inscription/inscription";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ToDo from "./containers/ToDoList";
@@ -15,10 +14,12 @@ import CustomCard from "./components/CustomCard";
 import BigThree from "./containers/Avengers/bigThree";
 import CustomDropdown from "./components/CustomDropdown";
 import DropDowns from "./containers/Dropdowns/Dropdowns";
+import Categorie from "./containers/Categorie/Categorie";
 const App = () => {
   return (
-    <div>
-      <DropDowns/>
+    <div style={{height:"100vh",display:"flex",justifyContent:"center",alignItems:"center"}}>
+        <Categorie/>
+      {/* <DropDowns/> */}
       {/* <BigThree/> */}
       {/* <ToDo/> */}
       {/* <Router>

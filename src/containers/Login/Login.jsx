@@ -1,9 +1,9 @@
 import CustomButton from '../../components/CustomButton';
 import CustomInput from '../../components/CustomInput';
 import { textInputProps , bootstrapButtonVariant ,buttonTexts } from '../../constants';
-import "./category.css";
+import "./Login.css";
 
-const Category = () => {
+const Login = () => {
     return(
         <div id="hey">
             <h1>Login</h1>
@@ -31,4 +31,4 @@ const Category = () => {
     ) 
 }
 
-export default Category;
+export default Login;

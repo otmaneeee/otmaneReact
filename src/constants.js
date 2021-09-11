@@ -110,9 +110,9 @@ export const dropdownProps = {
       id: "dropdown-basic",
     text: "Who's your favourite Avenger ?",
     menu: [
-      { link: "#Action", action: "Iron Man" },
-      { link: "#Another action", action: "Captain America" },
-      { link: "#Something else", action: "Thor" },
+      { link: "#Iron Man", action: "Iron Man" },
+      { link: "#Captain America", action: "Captain America" },
+      { link: "#Thor", action: "Thor" },
     ],
   },
   villain : {
@@ -120,9 +120,9 @@ export const dropdownProps = {
       id: "dropdown-basic",
     text: "Who's your favourite villain ?",
     menu: [
-      { link: "#Action", action: "Thanos" },
-      { link: "#Another action", action: "Ultron" },
-      { link: "#Something else", action: "Hela" },
+      { link: "#Thanos", action: "Thanos" },
+      { link: "#Ultron", action: "Ultron" },
+      { link: "#Hela", action: "Hela" },
     ]
   },
 };
