@@ -9,15 +9,17 @@ import React, { useState } from "react";
 import "./Login.css";
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [credentials, setCredentials] = useState({ email: "", password: "" });
   const handleChange = (e) => {
     switch (e.target.name) {
       case textInputProps.name.email:
-         setEmail(e.target.value);
+        setCredentials({
+          email: e.target.value,
+          password: credentials.password,
+        });
         break;
       case textInputProps.name.password:
-        setPassword(e.target.value);
+        setCredentials({ ...credentials, password: e.target.value });
         break;
       default:
         break;
@@ -60,8 +62,8 @@ const Login = () => {
       <br></br>
       <br></br>
       <h1>Informations</h1>
-      <h3>Email : {email}</h3>
-      <h3>Password : {password}</h3>
+      <h3>Email : {credentials.email}</h3>
+      <h3>Password : {credentials.password}</h3>
     </div>
   );
 };
