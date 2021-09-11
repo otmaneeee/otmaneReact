@@ -2,7 +2,7 @@ import CustomButton from "../../components/CustomButton";
 import React, { useState } from "react";
 import CustomInput from "../../components/CustomInput";
 import { PARAGRAPH_TO_TYPE } from "../../constants";
-import { stringCompare , stringsCharDiff } from "../../utils/stringUtils";
+import { stringCompare , stringsCharDiff , longerString } from "../../utils/stringUtils";
 const Categorie = () => {
   const [counter, setCounter] = useState(0);
   const [lastIndex, setLastIndex] = useState(0);
