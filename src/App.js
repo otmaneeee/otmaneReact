@@ -1,5 +1,5 @@
 import { toUpperCase } from "./utils/stringUtils";
-import { STATIC_HELLO } from "./constants";
+import { cardProps, STATIC_HELLO } from "./constants";
 import CustomButton from "./components/CustomButton";
 import { bootstrapButtonVariant, buttonTexts } from "./constants";
 import CustomInput from "./components/CustomInput";
@@ -9,12 +9,17 @@ import Inscription from "./containers/Inscription/inscription";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ToDo from "./containers/ToDoList";
 import CustomNavBar from "./components/CustomNavBar";
-import { navLinks, logoProps } from "./constants";
+import { navLinks, logoProps, dropdownProps } from "./constants";
 import Logo from "./components/CustomNavBar/Logo";
+import CustomCard from "./components/CustomCard";
+import BigThree from "./containers/Avengers/bigThree";
+import CustomDropdown from "./components/CustomDropdown";
+import DropDowns from "./containers/Dropdowns/Dropdowns";
 const App = () => {
   return (
     <div>
-      <CustomNavBar links={navLinks} />
+      <DropDowns/>
+      {/* <BigThree/> */}
       {/* <ToDo/> */}
       {/* <Router>
       <Switch>

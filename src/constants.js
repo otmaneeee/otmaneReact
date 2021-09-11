@@ -1,5 +1,5 @@
 export const STATIC_HELLO = "hello world";
-
+//Button
 export const bootstrapButtonVariant = {
   danger: "danger",
   success: "success",
@@ -16,7 +16,7 @@ export const buttonTexts = {
   mdpForgotten: "Mot de passe oublié",
   inscription: "S'inscrire",
 };
-
+//Input
 export const textInputProps = {
   type: { defaut: "text", password: "password", email: "email" },
   placeholder: {
@@ -36,7 +36,7 @@ export const textInputProps = {
     confirmPassword: "Confirmation du mot de passe",
   },
 };
-
+//NavBar
 export const customNavBarProps = {
   default: {
     background: "primary",
@@ -58,17 +58,75 @@ export const navLinks = [
 ];
 
 export const logoProps = {
-  default : {
+  default: {
     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5cMllkWiQQgd_NNM-7Nj2vUVn513EHEwbRQEVkTusuqlPXmAnJBCTWEM6Wgktn1k-9T4&usqp=CAU",
-  width: "70px",
-  height: "70px",
+    width: "70px",
+    height: "70px",
   },
-  avengers : {
+  avengers: {
     url: "https://www.pngitem.com/pimgs/m/33-334144_logo-avengers-hd-png-download.png",
-  width: "70px",
-  height: "70px",
-  }
+    width: "70px",
+    height: "70px",
+  },
 };
+//Custom Card
+export const cardProps = {
+  default: {
+    width: "18rem",
+    variant: "top",
+    src: "https://dailygeekshow.com/wp-content/uploads/2019/10/iron-man.jpg",
+    title: "Iron man",
+    text: "This is some random text",
+  },
+  cap: {
+    width: "18rem",
+    variant: "top",
+    src: "https://fabricelamirault.com/wp-content/uploads/2019/04/chris-evans-avengers-captain-america-1024x576.jpeg",
+    title: "Captain America",
+    text: "This is some random text",
+  },
+  thor: {
+    width: "18rem",
+    variant: "top",
+    src: "https://resize.programme-television.ladmedia.fr/r/670,670/img/var/premiere/storage/images/tele-7-jours/news-tv/5-bonnes-raisons-de-regarder-le-film-thor-france-3-4308451/77638943-1-fre-FR/5-bonnes-raisons-de-regarder-le-film-Thor-France-3.jpg",
+    title: "Thor",
+    text: "This is some random text",
+  },
+};
+// Dropdown
+export const dropdownProps = {
+  defaults: {
+    variant: "success",
+    id: "dropdown-basic",
+    text: "Dropdown Button",
+    menu: [
+      { link: "#action", action: "Action" },
+      { link: "#another action", action: "Another Action" },
+      { link: "#something else", action: "Something else" },
+    ],
+  },
+    avengers : {
+      variant : "primary",
+      id: "dropdown-basic",
+    text: "Who's your favourite Avenger ?",
+    menu: [
+      { link: "#Action", action: "Iron Man" },
+      { link: "#Another action", action: "Captain America" },
+      { link: "#Something else", action: "Thor" },
+    ],
+  },
+  villain : {
+    variant : "danger",
+      id: "dropdown-basic",
+    text: "Who's your favourite villain ?",
+    menu: [
+      { link: "#Action", action: "Thanos" },
+      { link: "#Another action", action: "Ultron" },
+      { link: "#Something else", action: "Hela" },
+    ]
+  },
+};
+    
 
 export const toDoList = {
   label: "Enter your next step",
