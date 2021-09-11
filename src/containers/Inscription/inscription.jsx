@@ -5,11 +5,12 @@ import {
   bootstrapButtonVariant,
   textInputProps,
 } from "../../constants";
+import "./inscription.css";
 
 
 const Inscription = () => {
   return (
-    <div className="container">
+    <div className="insc">
       <h1>Inscription</h1>
       <CustomInput
         label={textInputProps.label.firstName}
