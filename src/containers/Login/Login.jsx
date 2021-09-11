@@ -14,7 +14,7 @@ const Login = () => {
   const handleChange = (e) => {
     switch (e.target.name) {
       case textInputProps.name.email:
-        setEmail(e.target.value);
+         setEmail(e.target.value);
         break;
       case textInputProps.name.password:
         setPassword(e.target.value);
@@ -26,7 +26,7 @@ const Login = () => {
 
   return (
     <div>
-      <h1 id="title">Login</h1>
+      <h1 id="title">Welcome To My Login</h1>
       <br></br>
       <br></br>
       <CustomInput
