@@ -9,7 +9,7 @@ import {
 
 const Inscription = () => {
   return (
-    <div>
+    <div className="container">
       <h1>Inscription</h1>
       <CustomInput
         label={textInputProps.label.firstName}

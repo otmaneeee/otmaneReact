@@ -15,10 +15,12 @@ import BigThree from "./containers/Avengers/bigThree";
 import CustomDropdown from "./components/CustomDropdown";
 import DropDowns from "./containers/Dropdowns/Dropdowns";
 import Categorie from "./containers/Categorie/Categorie";
+import Login from "./containers/Login/Login"
 const App = () => {
   return (
-    <div style={{height:"100vh",display:"flex",justifyContent:"center",alignItems:"center"}}>
-        <Categorie/>
+    <div>
+         <Login/>
+        {/* <Categorie/> */}
       {/* <DropDowns/> */}
       {/* <BigThree/> */}
       {/* <ToDo/> */}

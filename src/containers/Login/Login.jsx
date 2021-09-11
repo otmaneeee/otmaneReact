@@ -5,7 +5,7 @@ import "./Login.css";
 
 const Login = () => {
     return(
-        <div id="hey">
+        <div className='container'>
             <h1>Login</h1>
             <br></br>
             <br></br>
@@ -23,10 +23,11 @@ const Login = () => {
       />
       <br></br>
       <br></br>
-      <CustomButton color={bootstrapButtonVariant.primary} text={buttonTexts.connection}/>
-      <br></br>
-      <br></br>
-      <CustomButton color={bootstrapButtonVariant.danger} text={buttonTexts.mdpForgotten}/>
+       <section className="btnContainer">
+       <CustomButton color={bootstrapButtonVariant.primary} text={buttonTexts.connection}/>
+        <CustomButton color={bootstrapButtonVariant.danger} text={buttonTexts.mdpForgotten}/>
+       </section>
+      
         </div>
     ) 
 }

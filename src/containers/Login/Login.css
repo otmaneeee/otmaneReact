@@ -1,17 +1,4 @@
-#hey div{
-    width:50%;
-}
-label{
-    color:red;
-}
-#hey{
-    width:60%;
-    margin:auto;
-    border:2px solid black;
-    
-    
-}
-h1{
-    letter-spacing: 5px;
-    color:dodgerblue;
+.btnContainer{
+    display:flex;
+    justify-content: space-evenly;
 }
