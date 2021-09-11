@@ -35,6 +35,11 @@ export const textInputProps = {
     lastName: "Nom",
     confirmPassword: "Confirmation du mot de passe",
   },
+  name:{
+    defaut : "defaut",
+    email : "email",
+    password : "password",
+  }
 };
 //NavBar
 export const customNavBarProps = {

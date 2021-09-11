@@ -5,12 +5,14 @@ const index = ({
   placeholder = textInputProps.placeholder.defaut,
   label = textInputProps.label.defaut,
   onChange,
+  name=textInputProps.name.defaut,
 }) => {
   return (
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>{label}</Form.Label>
         <Form.Control
+          name={name}
           type={type}
           placeholder={placeholder}
           onChange={onChange}
