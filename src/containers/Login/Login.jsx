@@ -7,9 +7,11 @@ import {
 } from "../../constants";
 import React, { useState } from "react";
 import "./Login.css";
+import { authUser,messageAuth } from "../../constants";
 
 const Login = () => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
+  const [error,setError] = useState(false);
   const handleChange = (e) => {
     switch (e.target.name) {
       case textInputProps.name.email:
@@ -25,6 +27,14 @@ const Login = () => {
         break;
     }
   };
+  const handleClick = () => {
+       if((credentials.email !== authUser.email) || (credentials.password !== authUser.password) ){
+         setError(true);
+       }
+       else{
+         setError(false);
+       }
+  }
 
   return (
     <div>
@@ -53,6 +63,7 @@ const Login = () => {
         <CustomButton
           color={bootstrapButtonVariant.primary}
           text={buttonTexts.connection}
+          onClick={handleClick}
         />
         <CustomButton
           color={bootstrapButtonVariant.danger}
@@ -64,6 +75,9 @@ const Login = () => {
       <h1>Informations</h1>
       <h3>Email : {credentials.email}</h3>
       <h3>Password : {credentials.password}</h3>
+      <br></br>
+      <h1>Resultat :</h1>
+      {error?<h3 style={{color:"red"}}>{messageAuth.error}</h3>:<h3 style={{color:"green"}}>{messageAuth.success}</h3>}
     </div>
   );
 };

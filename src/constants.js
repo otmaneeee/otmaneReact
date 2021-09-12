@@ -134,7 +134,16 @@ export const dropdownProps = {
 // Typing game
 export const PARAGRAPH_TO_TYPE = "my name is othmane";
 
+//authentification
+export const authUser = {
+  email : "othmane@gmail.com",
+  password : "123456",
+}
 
+export const messageAuth = {
+  error : "Info are incorrects",
+  success : "Congratulations"
+} 
 export const toDoList = {
   label: "Enter your next step",
   placeholder: "Enter your next step",
