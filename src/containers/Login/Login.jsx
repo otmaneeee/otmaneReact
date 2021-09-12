@@ -76,7 +76,7 @@ const Login = () => {
       <h3>Email : {credentials.email}</h3>
       <h3>Password : {credentials.password}</h3>
       <br></br>
-      <h1>Resultat :</h1>
+      <h1>Resultat d'authentification :</h1>
       {error?<h3 style={{color:"red"}}>{messageAuth.error}</h3>:<h3 style={{color:"green"}}>{messageAuth.success}</h3>}
     </div>
   );
