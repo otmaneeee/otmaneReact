@@ -19,7 +19,25 @@ import Login from "./containers/Login/Login";
 const App = () => {
   return (
     <div>
-      <BigThree />
+    <Router>
+      <Switch>
+          <Route path="/login">
+            <div style={{display:"flex",height:"100vh",justifyContent:"center",alignItems:"center"}}>
+              <Login />
+            </div>
+            
+          </Route>
+          <Route path="/inscription">
+          <div style={{display:"flex",height:"100vh",justifyContent:"center",alignItems:"center"}}>
+              <Inscription />
+            </div>
+          </Route>
+          <Route path="/">
+            <BigThree />
+          </Route>
+        </Switch>
+    </Router>
+  );
       {/* <Categorie/> */}
       {/* <DropDowns/> */}
       {/* <BigThree/> */}

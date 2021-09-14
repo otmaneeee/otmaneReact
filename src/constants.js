@@ -81,21 +81,21 @@ export const cardProps = {
     variant: "top",
     src: "https://dailygeekshow.com/wp-content/uploads/2019/10/iron-man.jpg",
     title: "Iron man",
-    text: "This is some random text",
+    text: "And i am Iron Man",
   },
   cap: {
     width: "18rem",
     variant: "top",
     src: "https://fabricelamirault.com/wp-content/uploads/2019/04/chris-evans-avengers-captain-america-1024x576.jpeg",
     title: "Captain America",
-    text: "This is some random text",
+    text: "I can do this all day",
   },
   thor: {
     width: "18rem",
     variant: "top",
     src: "https://resize.programme-television.ladmedia.fr/r/670,670/img/var/premiere/storage/images/tele-7-jours/news-tv/5-bonnes-raisons-de-regarder-le-film-thor-france-3-4308451/77638943-1-fre-FR/5-bonnes-raisons-de-regarder-le-film-Thor-France-3.jpg",
     title: "Thor",
-    text: "This is some random text",
+    text: "That's what heroes do",
   },
 };
 // Dropdown
