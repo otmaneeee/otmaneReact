@@ -18,15 +18,8 @@ import Categorie from "./containers/Categorie/Categorie";
 import Login from "./containers/Login/Login";
 const App = () => {
   return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Login />
+    <div>
+      <BigThree />
       {/* <Categorie/> */}
       {/* <DropDowns/> */}
       {/* <BigThree/> */}
