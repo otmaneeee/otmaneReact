@@ -16,10 +16,12 @@ import CustomDropdown from "./components/CustomDropdown";
 import DropDowns from "./containers/Dropdowns/Dropdowns";
 import Categorie from "./containers/Categorie/Categorie";
 import Login from "./containers/Login/Login";
+import BasicToDoList from "./containers/ToDoList/BasicToDoList";
 const App = () => {
   return (
     <div>
-    <Router>
+      <BasicToDoList/>
+    {/* <Router>
       <Switch>
           <Route path="/login">
             <div style={{display:"flex",height:"100vh",justifyContent:"center",alignItems:"center"}}>
@@ -36,7 +38,7 @@ const App = () => {
             <BigThree />
           </Route>
         </Switch>
-    </Router>
+    </Router> */}
   );
       {/* <Categorie/> */}
       {/* <DropDowns/> */}

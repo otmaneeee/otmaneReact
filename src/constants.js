@@ -15,6 +15,7 @@ export const buttonTexts = {
   connection: "Se connecter",
   mdpForgotten: "Mot de passe oublié",
   inscription: "S'inscrire",
+  toDoList : "Add",
 };
 //Input
 export const textInputProps = {
@@ -26,6 +27,7 @@ export const textInputProps = {
     firstName: "entrez votre prenom",
     lastName: "entrez votre nom",
     confirmPassword: "confirmez votre mot de passe",
+    toDoList : "enter your next task"
   },
   label: {
     defaut: "enter your info",
@@ -34,6 +36,7 @@ export const textInputProps = {
     firstName: "Prenom",
     lastName: "Nom",
     confirmPassword: "Confirmation du mot de passe",
+    toDoList : "Enter your task"
   },
   name:{
     defaut : "defaut",
