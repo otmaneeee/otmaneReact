@@ -18,6 +18,7 @@ import Categorie from "./containers/Categorie/Categorie";
 import Login from "./containers/Login/Login";
 import BasicToDoList from "./containers/ToDoList/BasicToDoList";
 import Header from "./layouts/Header/index";
+import ReadTodo from "./containers/ReadTodo/ReadTodo";
 const App = () => {
   return (
     <div>
@@ -40,6 +41,9 @@ const App = () => {
           </Route>
           <Route path="/todo">
              <BasicToDoList/>
+          </Route>
+          <Route path="/readTodo">
+               <ReadTodo/>
           </Route>
           <Route path="/">
              <BigThree/>

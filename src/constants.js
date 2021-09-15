@@ -56,6 +56,7 @@ export const customNavBarProps = {
       { link: "/Login", text: "Login" },
       { link: "/Inscription", text: "Inscription" },
       { link: "/todo", text: "To-Do" },
+      { link: "/readTodo", text: "ReadTodo" },
     ],
     logo: "My website",
   },
