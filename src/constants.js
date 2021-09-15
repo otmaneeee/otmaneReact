@@ -52,17 +52,19 @@ export const customNavBarProps = {
     navHome: "/",
     className: "me-auto",
     options: [
-      { link: "#home", text: "Home" },
-      { link: "#features", text: "Features" },
+      { link: "/home", text: "Home" },
+      { link: "/Login", text: "Login" },
+      { link: "/Inscription", text: "Inscription" },
+      { link: "/todo", text: "To-Do" },
     ],
     logo: "My website",
   },
 };
 
 export const navLinks = [
-  { link: "#home", text: "Home" },
-  { link: "#features", text: "Features" },
-  { link: "#pricing", text: "Pricing" },
+  { link: "/home", text: "Home" },
+  { link: "/features", text: "Features" },
+  { link: "/pricing", text: "Pricing" },
 ];
 
 export const logoProps = {

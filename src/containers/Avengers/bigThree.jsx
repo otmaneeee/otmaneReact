@@ -11,7 +11,6 @@ import {
 const bigThree = () => {
   return (
     <div>
-      <CustomNavBar links={navLinks} />
       <CustomCard />
       <CustomCard {...cardProps.cap} />
       <CustomCard {...cardProps.thor} />

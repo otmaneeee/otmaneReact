@@ -17,10 +17,35 @@ import DropDowns from "./containers/Dropdowns/Dropdowns";
 import Categorie from "./containers/Categorie/Categorie";
 import Login from "./containers/Login/Login";
 import BasicToDoList from "./containers/ToDoList/BasicToDoList";
+import Header from "./layouts/Header/index";
 const App = () => {
   return (
     <div>
-      <BasicToDoList/>
+    <Router>
+      {/* car le Header se trouve dans toutes les pages */}
+      <Header/>
+      <Switch>
+          <Route path="/login">
+          <div style={{display:"flex",height:"100vh",justifyContent:"center",alignItems:"center"}}>
+              <Login />
+            </div>
+          </Route>
+          <Route path="/inscription">
+          <div style={{display:"flex",height:"100vh",justifyContent:"center",alignItems:"center"}}>
+              <Inscription />
+            </div>
+          </Route>
+          <Route path="/home">
+            <BigThree />
+          </Route>
+          <Route path="/todo">
+             <BasicToDoList/>
+          </Route>
+          <Route path="/">
+             <BigThree/>
+          </Route>
+        </Switch>
+    </Router>
     {/* <Router>
       <Switch>
           <Route path="/login">
