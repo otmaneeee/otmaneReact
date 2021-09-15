@@ -6,6 +6,7 @@ const index = ({
   label = textInputProps.label.defaut,
   onChange,
   name=textInputProps.name.defaut,
+  value,
 }) => {
   return (
     <Form>
@@ -16,6 +17,7 @@ const index = ({
           type={type}
           placeholder={placeholder}
           onChange={onChange}
+          value={value}
         />
       </Form.Group>
     </Form>

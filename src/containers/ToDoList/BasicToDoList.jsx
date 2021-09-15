@@ -19,15 +19,19 @@ const BasicToDoList = () => {
           alert("Add a task");
           return;
       }
-      setCounter(counter+1);
       setTodoList([...todoList,{id:counter,text:task}]);
+      setCounter(counter+1);
+      setTask("");
   }
   return (
+    <div>
+      <h1 style={{textAlign:"center",color:"red"}}>To-do List</h1>
     <div className="todoContainer">
       <CustomInput
         placeholder={textInputProps.placeholder.toDoList}
         label={textInputProps.label.toDoList}
         onChange={handleChange}
+        value = {task}
       />
       <CustomButton
         text={buttonTexts.toDoList}
@@ -38,8 +42,9 @@ const BasicToDoList = () => {
       <br></br>
       <h1>Tasks</h1>
       <ul>
-          {todoList.map((item) => <li>{item.id}- ---{item.text}</li>)}
+          {todoList.map((item) => <li>{item.id}-----{item.text}</li>)}
       </ul>
+    </div>
     </div>
   );
 };
