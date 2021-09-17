@@ -54,7 +54,12 @@ const BasicToDoList = () => {
       <br></br>
       <h1>Tasks</h1>
       <ul>
-          {todoList.map((item) => <li>{item.id} ----- {item.text}</li>)}
+          {todoList.map((item) => (
+            <div>
+              <li>{item.id} ----- {item.text}</li>
+               <CustomButton color={bootstrapButtonVariant.success} text={"+"} />
+            </div>
+          ))}
       </ul>
     </div>
     </div>

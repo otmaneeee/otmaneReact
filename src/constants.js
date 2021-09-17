@@ -142,8 +142,8 @@ export const cardProps = {
   spiderMan : {
     width: "18rem",
     variant: "top",
-    src : "https://lh3.googleusercontent.com/proxy/nlLAt1hms21P3OqC-4gpfLMrJKgMDJ852AXyNFnvSa7841PYDZZ0mNdmikPLMNFVmBb4gQ-dwLxwLoBW6f0zRt1ovsuRicqGlctoKF31u8sF-9A",
     title: "Spider Man",
+    src : "https://www.lesinrocks.com/wp-content/uploads/2019/08/civil-war-spidey-width_1600_height_802_x_0_y_36.jpg?resize=850%2C540&quality=75",
     text: "M ready for our next mission",
   },
   
