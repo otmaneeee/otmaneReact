@@ -42,12 +42,12 @@ const BasicToDoList = () => {
       />
       <CustomButton
         text={buttonTexts.toDoList}
-        color={bootstrapButtonVariant.danger}
+        color={bootstrapButtonVariant.success}
         onClick={handleClick}
       />
       <CustomButton
         text={buttonTexts.delete}
-        color={bootstrapButtonVariant.outlineWarning}
+        color={bootstrapButtonVariant.danger}
          onClick={deleteLastElement}
       />
       <br></br>

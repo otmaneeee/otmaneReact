@@ -5,6 +5,7 @@ export const bootstrapButtonVariant = {
   success: "success",
   outlineWarning: "outline-warning",
   primary: "primary",
+  outlineSuccess : "outline-success",
 };
 
 export const buttonTexts = {
@@ -142,7 +143,7 @@ export const cardProps = {
   spiderMan : {
     width: "18rem",
     variant: "top",
-    src : "https://lh3.googleusercontent.com/proxy/nlLAt1hms21P3OqC-4gpfLMrJKgMDJ852AXyNFnvSa7841PYDZZ0mNdmikPLMNFVmBb4gQ-dwLxwLoBW6f0zRt1ovsuRicqGlctoKF31u8sF-9A",
+    src : "https://c2.lestechnophiles.com/www.numerama.com/wp-content/uploads/2019/08/spiderman-1.jpeg?resize=1212,712",
     title: "Spider Man",
     text: "M ready for our next mission",
   },

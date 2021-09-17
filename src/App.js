@@ -18,12 +18,15 @@ import Login from "./containers/Login/Login";
 import BasicToDoList from "./containers/ToDoList/BasicToDoList";
 import Header from "./layouts/Header/index";
 import Tasks from "./containers/Tasks/Tasks";
+import Circle from "./components/circle/index";
+import ColorGame from "./containers/ColorGame/ColorGame";
 const App = () => {
   return (
     <div>
-    <Router>
+     <ColorGame/>
+    {/* <Router> */}
       {/* car le Header se trouve dans toutes les pages */}
-      <Header/>
+      {/* <Header/>
       <Switch>
           <Route path="/login">
           <div style={{display:"flex",height:"100vh",justifyContent:"center",alignItems:"center"}}>
@@ -48,7 +51,7 @@ const App = () => {
              <BigThree/>
           </Route>
         </Switch>
-    </Router>
+    </Router> */}
     {/* <Router>
       <Switch>
           <Route path="/login">
