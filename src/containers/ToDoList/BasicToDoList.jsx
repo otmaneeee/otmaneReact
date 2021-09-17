@@ -57,7 +57,7 @@ const BasicToDoList = () => {
           {todoList.map((item) => (
             <div>
               <li>{item.id} ----- {item.text}</li>
-               <CustomButton color={bootstrapButtonVariant.success} text={"+"} />
+               <CustomButton color={bootstrapButtonVariant.success} text={"✓"} />
             </div>
           ))}
       </ul>
