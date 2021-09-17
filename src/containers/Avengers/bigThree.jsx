@@ -14,6 +14,13 @@ const bigThree = () => {
       <CustomCard />
       <CustomCard {...cardProps.cap} />
       <CustomCard {...cardProps.thor} />
+      <CustomCard {...cardProps.hulk} />
+      <CustomCard {...cardProps.blackWidow} />
+      <CustomCard {...cardProps.hawkeye} />
+      <CustomCard {...cardProps.warMachine} />
+      <CustomCard {...cardProps.Wanda} />
+      <CustomCard {...cardProps.spiderMan} />
+      
     </div>
   );
 };

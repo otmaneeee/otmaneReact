@@ -16,6 +16,7 @@ export const buttonTexts = {
   mdpForgotten: "Mot de passe oublié",
   inscription: "S'inscrire",
   toDoList : "Add",
+  delete : "Vider",
 };
 //Input
 export const textInputProps = {
@@ -56,7 +57,7 @@ export const customNavBarProps = {
       { link: "/Login", text: "Login" },
       { link: "/Inscription", text: "Inscription" },
       { link: "/todo", text: "To-Do" },
-      { link: "/readTodo", text: "ReadTodo" },
+      { link: "/tasks", text: "Tasks" },
     ],
     logo: "My website",
   },
@@ -87,7 +88,7 @@ export const cardProps = {
     variant: "top",
     src: "https://dailygeekshow.com/wp-content/uploads/2019/10/iron-man.jpg",
     title: "Iron man",
-    text: "And i am Iron Man",
+    text: "And I am Iron Man",
   },
   cap: {
     width: "18rem",
@@ -103,6 +104,49 @@ export const cardProps = {
     title: "Thor",
     text: "That's what heroes do",
   },
+  hulk: {
+    width: "18rem",
+    variant: "top",
+    src : "https://i.ytimg.com/vi/MAfIvBgChjQ/maxresdefault.jpg",
+    title: "Hulk",
+    text: "DESTROY EVERYTHING",
+  },
+  blackWidow: {
+    width: "18rem",
+    variant: "top",
+    src : "https://img.phonandroid.com/2021/03/black-widow-1.jpg",
+    title: "Black Widow",
+    text: "I used to have nothing",
+  },
+  hawkeye: {
+    width: "18rem",
+    variant: "top",
+    src : "https://www.dexerto.fr/wp-content/uploads/sites/2/2020/11/jeremy-renner-partage-la-premiere-photo-de-la-serie-hawkeye-de-disney.jpg",
+    title: "Hawkeye",
+    text: "You didn't see that coming ?",
+  },
+  warMachine: {
+    width: "18rem",
+    variant: "top",
+    src : "https://images.hdqwalls.com/download/2020-war-machine-4k-ss-1920x1080.jpg",
+    title: "War Machine",
+    text: "Boom are you looking for this ?",
+  },
+  Wanda : {
+    width: "18rem",
+    variant: "top",
+    src : "https://medias.spotern.com/spots/w640/242/242127-1571726340.jpg",
+    title: "Wanda",
+    text: "You took everything from me ",
+  },
+  spiderMan : {
+    width: "18rem",
+    variant: "top",
+    src : "https://lh3.googleusercontent.com/proxy/nlLAt1hms21P3OqC-4gpfLMrJKgMDJ852AXyNFnvSa7841PYDZZ0mNdmikPLMNFVmBb4gQ-dwLxwLoBW6f0zRt1ovsuRicqGlctoKF31u8sF-9A",
+    title: "Spider Man",
+    text: "M ready for our next mission",
+  },
+  
 };
 // Dropdown
 export const dropdownProps = {
@@ -148,8 +192,9 @@ export const authUser = {
 
 export const messageAuth = {
   error : "Info are incorrects",
-  success : "Congratulations"
+  success : "You're an avenger now !"
 } 
+
 export const toDoList = {
   label: "Enter your next step",
   placeholder: "Enter your next step",

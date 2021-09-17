@@ -7,10 +7,13 @@ import {
   buttonTexts,
 } from "../../constants";
 import CustomButton from "../../components/CustomButton";
+import { addTask , removeTask } from "./action";
+import { useDispatch , useSelector} from "react-redux";
 const BasicToDoList = () => {
   const [task, setTask] = useState("");
   const [counter,setCounter] = useState(0);
-  const [todoList, setTodoList] = useState([]);
+  const dispatch = useDispatch();
+  const todoList = useSelector((state)=>state.tasksState.taskList);
   const handleChange = (e) => {
       setTask(e.target.value);
   }
@@ -19,9 +22,13 @@ const BasicToDoList = () => {
           alert("Add a task");
           return;
       }
-      setTodoList([...todoList,{id:counter,text:task}]);
+      // setTodoList([...todoList,{id:counter,text:task}]);
+      dispatch(addTask({id:counter,text:task}));
       setCounter(counter+1);
       setTask("");
+  }
+   const deleteLastElement = () =>{
+     dispatch(removeTask());
   }
   return (
     <div>
@@ -38,11 +45,16 @@ const BasicToDoList = () => {
         color={bootstrapButtonVariant.danger}
         onClick={handleClick}
       />
+      <CustomButton
+        text={buttonTexts.delete}
+        color={bootstrapButtonVariant.outlineWarning}
+         onClick={deleteLastElement}
+      />
       <br></br>
       <br></br>
       <h1>Tasks</h1>
       <ul>
-          {todoList.map((item) => <li>{item.id}-----{item.text}</li>)}
+          {todoList.map((item) => <li>{item.id} ----- {item.text}</li>)}
       </ul>
     </div>
     </div>

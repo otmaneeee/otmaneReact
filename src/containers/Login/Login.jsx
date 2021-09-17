@@ -7,11 +7,11 @@ import {
 } from "../../constants";
 import React, { useState } from "react";
 import "./Login.css";
-import { authUser,messageAuth } from "../../constants";
+import { authUser, messageAuth } from "../../constants";
 
 const Login = () => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
-  const [error,setError] = useState(false);
+  const [error, setError] = useState(false);
   const handleChange = (e) => {
     switch (e.target.name) {
       case textInputProps.name.email:
@@ -28,13 +28,19 @@ const Login = () => {
     }
   };
   const handleClick = () => {
-       if((credentials.email !== authUser.email) || (credentials.password !== authUser.password) ){
-         setError(true);
-       }
-       else{
-         setError(false);
-       }
-  }
+    if (
+      credentials.email !== authUser.email ||
+      credentials.password !== authUser.password
+    ) {
+      setError(true);
+    } else {
+      setError(false);
+    }
+  };
+
+  const handleDelete = () => {
+    setCredentials({ email: "", password: "" });
+  };
 
   return (
     <div>
@@ -47,6 +53,7 @@ const Login = () => {
         label={textInputProps.label.email}
         onChange={handleChange}
         name={textInputProps.name.email}
+        value={credentials.email}
       />
       <br></br>
       <br></br>
@@ -56,6 +63,7 @@ const Login = () => {
         label={textInputProps.label.password}
         onChange={handleChange}
         name={textInputProps.name.password}
+        value={credentials.password}
       />
       <br></br>
       <br></br>
@@ -69,6 +77,11 @@ const Login = () => {
           color={bootstrapButtonVariant.danger}
           text={buttonTexts.mdpForgotten}
         />
+        <CustomButton
+          color={bootstrapButtonVariant.success}
+          text={buttonTexts.delete}
+          onClick={handleDelete}
+        />
       </section>
       <br></br>
       <br></br>
@@ -77,7 +90,11 @@ const Login = () => {
       <h3>Password : {credentials.password}</h3>
       <br></br>
       <h1>Resultat d'authentification :</h1>
-      {error?<h3 style={{color:"red"}}>{messageAuth.error}</h3>:<h3 style={{color:"green"}}>{messageAuth.success}</h3>}
+      {error ? (
+        <h3 style={{ color: "red" }}>{messageAuth.error}</h3>
+      ) : (
+        <h3 style={{ color: "green" }}>{messageAuth.success}</h3>
+      )}
     </div>
   );
 };

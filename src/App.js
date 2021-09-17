@@ -6,7 +6,6 @@ import CustomInput from "./components/CustomInput";
 import { textInputProps } from "./constants";
 import Inscription from "./containers/Inscription/inscription";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import ToDo from "./containers/ToDoList";
 import CustomNavBar from "./components/CustomNavBar";
 import { navLinks, logoProps, dropdownProps } from "./constants";
 import Logo from "./components/CustomNavBar/Logo";
@@ -18,7 +17,7 @@ import Categorie from "./containers/Categorie/Categorie";
 import Login from "./containers/Login/Login";
 import BasicToDoList from "./containers/ToDoList/BasicToDoList";
 import Header from "./layouts/Header/index";
-import ReadTodo from "./containers/ReadTodo/ReadTodo";
+import Tasks from "./containers/Tasks/Tasks";
 const App = () => {
   return (
     <div>
@@ -42,8 +41,8 @@ const App = () => {
           <Route path="/todo">
              <BasicToDoList/>
           </Route>
-          <Route path="/readTodo">
-               <ReadTodo/>
+          <Route path="/tasks">
+               <Tasks/>
           </Route>
           <Route path="/">
              <BigThree/>
