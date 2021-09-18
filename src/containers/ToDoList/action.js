@@ -5,6 +5,12 @@ export const addTask = (payload) =>{
         payload,
     };
 };
+export const pushTask = (payload) =>{
+    return{
+        type:actionsType.PUSH_TASKS,
+        payload,
+    };
+};
 export const removeTask = () =>{
     return{
         type:actionsType.REMOVE_ALL,

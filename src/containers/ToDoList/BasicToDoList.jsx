@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./BasicToDoList.css";
 import CustomInput from "../../components/CustomInput";
 import {
@@ -7,13 +7,18 @@ import {
   buttonTexts,
 } from "../../constants";
 import CustomButton from "../../components/CustomButton";
-import { addTask , removeTask } from "./action";
+import { addTask , removeTask,pushTask } from "./action";
 import { useDispatch , useSelector} from "react-redux";
+import { listMission } from "./constants";
+
 const BasicToDoList = () => {
   const [task, setTask] = useState("");
   const [counter,setCounter] = useState(0);
   const dispatch = useDispatch();
   const todoList = useSelector((state)=>state.tasksState.taskList);
+  useEffect(()=>{
+    dispatch(pushTask(listMission))
+  },[]);
   const handleChange = (e) => {
       setTask(e.target.value);
   }
