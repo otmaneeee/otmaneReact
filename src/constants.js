@@ -200,3 +200,9 @@ export const toDoList = {
   placeholder: "Enter your next step",
   type: "text",
 };
+
+//Firebase
+export const collections = {
+    todo : "/tasks",
+    user : "/user"
+}
